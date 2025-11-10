@@ -1,10 +1,10 @@
 import "./Portfolio.css";
 import Bio from "./components/Bio";
 import Skills from "./components/Skills";
+import profileImage from "./assets/images/kondwani.png";
 
 function Portfolio() {
   const name = "kondwani muwowo";
-  const imgLink = "src/assets/images/kondwani.png";
   const skills = [
     "HTML5",
     "CSS3",
@@ -18,7 +18,7 @@ function Portfolio() {
 
   return (
     <>
-      <Bio name={name} imgLink={imgLink} />
+      <Bio name={name} imgLink={profileImage} />
       <Skills skills={skills} learning={learning} />
       <p className="text-gray-400 text-sm text-center">
         Get back here soon to find new features as I add more to this portfolio.
