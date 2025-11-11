@@ -1,0 +1,9 @@
+{
+  "name": "kondwani-portfolio",
+  "compatibility_date": "2025-11-10",
+  "pages_build_output": true,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  }
+}
