@@ -1,3 +1,6 @@
+const BIO_TEXT =
+  "I’m a frontend software developer expanding my expertise in full-stack development. Outside coding, I enjoy fitness, chess, and creating graphic designs.";
+
 function capitalize(words) {
   if (!words) return "";
   return words
@@ -8,16 +11,13 @@ function capitalize(words) {
 
 function Bio({ imgLink, name }) {
   return (
-    <>
+    <section>
       <div className="portfolio-img">
         <img src={imgLink} alt={name} />
       </div>
       <h1 className="my-name">I'm {capitalize(name)}.</h1>
-      <p className="bio">
-        A frontend software developer building full-stack capabilities. In my
-        free time, I enjoy working out, playing chess and designing graphics.
-      </p>
-    </>
+      <p className="bio">{BIO_TEXT}</p>
+    </section>
   );
 }
 
