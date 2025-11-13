@@ -28,11 +28,11 @@ body {
   place-items: flex-start center;
   gap: 1rem;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.1;
 }
 
