@@ -28,8 +28,14 @@ const Projects = () => {
       id: 2,
       title: "Weather App",
       description:
-        "A responsive portfolio website built with React, showcasing my projects and skills. Features modern UI design with smooth animations and dark mode support.",
-      technologies: ["React", "CSS3", "JavaScript", "Vite"],
+        "Kuwala is a simple and clean weather app I built using the VisualCrossing API. It fetches real-time weather data for any location the user searches and displays conditions like temperature, humidity and wind speed.",
+      technologies: [
+        "Javascript",
+        "HTML5/CSS3",
+        "VisualCrossing API",
+        "Vite",
+        "Fetch API",
+      ],
       liveLink: "https://your-portfolio-link.com",
       githubLink: "https://github.com/kondwanimuwowo/portfolio",
       image: weatherApp,

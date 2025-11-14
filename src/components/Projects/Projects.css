@@ -108,23 +108,22 @@
 }
 
 .live-demo {
-  background: #007acc;
+  background: #193446;
   color: white;
 }
 
 .live-demo:hover {
-  background: #005a9e;
+  color: #06a6e6;
   transform: translateY(-2px);
 }
 
 .github {
-  background: transparent;
-  color: #007acc;
-  border: 2px solid #007acc;
+  background: #193446;
+  color: white;
 }
 
 .github:hover {
-  background: #007acc;
+  background: #193446;
   color: white;
   transform: translateY(-2px);
 }
