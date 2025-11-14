@@ -1,0 +1,206 @@
+.projects-section {
+  padding: 1rem 0;
+  background: linear-gradient(135deg, #343434 0%, #404040 100%);
+  margin: 1rem 0;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+  font-weight: 700;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+
+.image-placeholder {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: ;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.project-description {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background: #e9ecef;
+  color: #495057;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+  flex: 1;
+}
+
+.live-demo {
+  background: #007acc;
+  color: white;
+}
+
+.live-demo:hover {
+  background: #005a9e;
+  transform: translateY(-2px);
+}
+
+.github {
+  background: transparent;
+  color: #007acc;
+  border: 2px solid #007acc;
+}
+
+.github:hover {
+  background: #007acc;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Coming Soon Card */
+.coming-soon-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.coming-soon-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.coming-soon-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.coming-soon-content p {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.construction-text {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .projects-title {
+    color: #ecf0f1;
+  }
+
+  .project-title {
+    color: #ecf0f1;
+  }
+
+  .project-description {
+    color: #bdc3c7;
+  }
+
+  .tech-tag {
+    background: #34495e;
+    color: #ecf0f1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+}

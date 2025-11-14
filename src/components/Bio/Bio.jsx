@@ -1,4 +1,4 @@
-import Socials from "../ui/Socials.jsx";
+import Socials from "../ui/Socials/Socials.jsx";
 import "./Bio.css";
 
 const BIO_TEXT_ONE =

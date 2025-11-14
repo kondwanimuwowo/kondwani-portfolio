@@ -1,52 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
   text-align: center;
-}
-
-.portfolio-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ddd;
-  border-radius: 50%;
-  width: 7rem;
-  height: 7rem;
-  margin: 2rem auto 2rem auto;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
-
-.portfolio-img img {
-  width: 100%;
-  height: auto;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.portfolio-img img:hover {
-  cursor: pointer;
-}
-
-.my-name {
-  font-weight: 600;
-  color: #fff;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.skills {
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
 }
