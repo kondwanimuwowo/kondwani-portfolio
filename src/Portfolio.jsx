@@ -9,6 +9,7 @@ function Portfolio() {
       <Bio />
       <Skills />
       <Projects />
+      <br />
       <p className="coming-soon">
         Get back here soon to find new features as I add more to this portfolio
       </p>

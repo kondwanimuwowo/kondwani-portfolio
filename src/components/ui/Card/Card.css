@@ -1,5 +1,5 @@
 .card {
-  background: #ad5a5a;
+  background: #222;
   border-radius: 12px;
   border: 1px solid #404040;
   transition: all 0.3s ease;
@@ -9,5 +9,5 @@
 .card-hoverable:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  border-color: #ad5a5a;
+  border-color: #222;
 }

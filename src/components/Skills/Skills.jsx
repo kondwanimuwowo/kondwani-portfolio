@@ -34,7 +34,7 @@ function Skills() {
   ];
 
   return (
-    <section>
+    <section className="skills-section">
       <div>
         <h3>Technical Skills</h3>
         <div className="skills-container">
