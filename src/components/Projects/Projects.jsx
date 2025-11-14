@@ -39,7 +39,7 @@ const Projects = () => {
       liveLink: "https://kondwanimuwowo.github.io/weather-app",
       githubLink: "https://github.com/kondwanimuwowo/weather-app",
       image: weatherApp,
-      featured: false,
+      featured: true,
     },
 
     // Empty project for coming soon

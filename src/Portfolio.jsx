@@ -2,6 +2,7 @@ import "./Portfolio.css";
 import Bio from "./components/Bio/Bio.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Projects from "./components/Projects/Projects.jsx";
+import Contact from "./components/Contact.jsx";
 
 function Portfolio() {
   return (
@@ -10,9 +11,7 @@ function Portfolio() {
       <Skills />
       <Projects />
       <br />
-      <p className="coming-soon">
-        Get back here soon to find new features as I add more to this portfolio
-      </p>
+      <Contact />
     </>
   );
 }

@@ -12,7 +12,7 @@
 .projects-title {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   color: #ccc;
   font-weight: 700;
 }
@@ -64,7 +64,6 @@
 
 .project-title {
   font-size: 1.5rem;
-  margin-bottom: ;
   color: #ccc;
   font-weight: 600;
 }

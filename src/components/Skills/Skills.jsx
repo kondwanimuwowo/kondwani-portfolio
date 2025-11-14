@@ -35,6 +35,7 @@ function Skills() {
 
   return (
     <section className="skills-section">
+      <h2 className="skills-title">Skills</h2>
       <div>
         <h3>Technical Skills</h3>
         <div className="skills-container">

@@ -16,7 +16,7 @@
   color: white;
   border: none;
   border-radius: 30px;
-  font-weight: 500;
+  font-weight: 300;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -28,7 +28,7 @@
 }
 
 .download-icon {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* Subtle button */
