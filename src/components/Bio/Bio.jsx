@@ -1,5 +1,6 @@
 import Socials from "../ui/Socials/Socials.jsx";
 import "./Bio.css";
+import { FaDownload } from "react-icons/fa";
 
 const BIO_TEXT_ONE =
   "I’m a frontend software developer expanding my expertise in full-stack development.";
@@ -18,8 +19,23 @@ function Bio() {
   const name = "kondwani";
   const imgLink = "/images/kondwani.png";
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/kondwani-resume.pdf";
+    link.download = "Kondwani_Muwowo_Frontend_Developer_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <section>
+    <section className="bio-section">
+      <div className="bio-header">
+        <button className="download-btn" onClick={handleDownload}>
+          <FaDownload className="download-icon" />
+          Resume
+        </button>
+      </div>
       <div className="portfolio-img">
         <img src={imgLink} alt={name} />
       </div>

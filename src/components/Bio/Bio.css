@@ -1,3 +1,48 @@
+.bio-section {
+  position: relative;
+}
+
+.bio-header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 2rem;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.download-icon {
+  font-size: 16px;
+}
+
+/* Subtle button */
+.download-btn.outline {
+  background: transparent;
+  border: 2px solid #667eea;
+  color: #667eea;
+}
+
+.download-btn.outline:hover {
+  background: #667eea;
+  color: white;
+}
+
 .portfolio-img {
   display: flex;
   align-items: center;
@@ -27,6 +72,7 @@
   font-weight: 600;
   color: #fff;
 }
+
 .bio-text {
   font-size: 1rem;
   color: #ccc;

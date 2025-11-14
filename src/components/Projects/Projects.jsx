@@ -11,7 +11,7 @@ const Projects = () => {
       description:
         "A website built for an NGO in Zambia. It showcases their vision, mission programs and the impact the organisation has had on the lives of young girls. Features modern and clean UI.",
       technologies: [
-        "Wordpress",
+        "WordPress",
         "CSS3/HTML5",
         "JavaScript",
         "PHP",
@@ -36,8 +36,8 @@ const Projects = () => {
         "Vite",
         "Fetch API",
       ],
-      liveLink: "https://your-portfolio-link.com",
-      githubLink: "https://github.com/kondwanimuwowo/portfolio",
+      liveLink: "https://kondwanimuwowo.github.io/weather-app",
+      githubLink: "https://github.com/kondwanimuwowo/weather-app",
       image: weatherApp,
       featured: false,
     },
