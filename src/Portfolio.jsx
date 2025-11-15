@@ -2,7 +2,7 @@ import "./Portfolio.css";
 import Bio from "./components/Bio/Bio.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import Projects from "./components/Projects/Projects.jsx";
-import Contact from "./components/Contact.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 
 function Portfolio() {
   return (
@@ -10,7 +10,6 @@ function Portfolio() {
       <Bio />
       <Skills />
       <Projects />
-      <br />
       <Contact />
     </>
   );
