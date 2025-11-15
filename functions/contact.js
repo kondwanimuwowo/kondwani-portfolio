@@ -1,3 +1,4 @@
+// functions/contact.js
 export async function onRequestPost({ request }) {
   try {
     const body = await request.json();
@@ -20,11 +21,11 @@ export async function onRequestPost({ request }) {
         body: JSON.stringify({
           personalizations: [
             {
-              to: [{ email: "hi@kondwanimuwowo.com" }],
+              to: [{ email: "kondwanimuwowo@gmail.com" }], // Your email
             },
           ],
           from: {
-            email: "no-reply@kondwanimuwowo.com",
+            email: "contact@kondwanimuwowo.com", // Use your domain
             name: "Portfolio Contact Form",
           },
           subject: `New message from ${data.name}`,
