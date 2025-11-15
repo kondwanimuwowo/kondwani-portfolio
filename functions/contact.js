@@ -1,42 +1,43 @@
-// functions/contact.js - SIMPLE VERSION
-export async function onRequestPost({ request }) {
-  try {
-    const body = await request.json();
+export async function onRequestPost(context) {
+  const body = await context.request.json();
 
-    // Just log the form data to Cloudflare dashboard
-    console.log("📧 Contact form submission received:");
-    console.log("Name:", body.name);
-    console.log("Email:", body.email);
-    console.log("Message:", body.message);
+  const data = {
+    name: body.name,
+    email: body.email,
+    message: body.message,
+    time: new Date().toISOString(),
+  };
 
-    // Always return success for now
-    return new Response(
-      JSON.stringify({
-        success: true,
-        message: "Thank you! Your message has been received.",
-      }),
-      {
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
+  // Save in Cloudflare Logs (optional)
+  console.log("New Contact Form Submission:", data);
+
+  // Send the message to your email via Cloudflare Email Routing webhook
+  // Simplest method: forward to your email using a Cloudflare Worker-style email POST
+
+  await fetch("https://api.mailchannels.net/tx/v1/send", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      personalizations: [
+        {
+          to: [{ email: "hi@kondwanimuwowo.com" }],
         },
-      }
-    );
-  } catch (error) {
-    console.error("Error in contact form:", error);
-
-    return new Response(
-      JSON.stringify({
-        success: false,
-        error: "Something went wrong. Please try again.",
-      }),
-      {
-        status: 500,
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
+      ],
+      from: {
+        email: "no-reply@kondwanimuwowo.com",
+        name: "Contact Form",
+      },
+      subject: `New message from ${data.name}`,
+      content: [
+        {
+          type: "text/plain",
+          value: `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`,
         },
-      }
-    );
-  }
+      ],
+    }),
+  });
+
+  return new Response(JSON.stringify({ success: true }), {
+    headers: { "Content-Type": "application/json" },
+  });
 }
