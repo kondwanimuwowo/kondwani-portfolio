@@ -1,3 +1,4 @@
+// src/components/Contact/Contact.jsx
 import "./Contact.css";
 import { useState } from "react";
 
@@ -5,11 +6,10 @@ function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
     message: "",
   });
+  const [status, setStatus] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState("");
 
   const handleChange = (e) => {
     setFormData({
@@ -21,11 +21,10 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus("");
+    setStatus("Sending...");
 
     try {
-      // Cloudflare Pages Functions endpoint
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -35,16 +34,15 @@ function Contact() {
 
       const result = await response.json();
 
-      if (response.ok) {
-        setSubmitStatus("success");
-        setFormData({ name: "", email: "", subject: "", message: "" });
+      if (response.ok && result.success) {
+        setStatus("✅ Message sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
       } else {
-        setSubmitStatus("error");
-        console.error("SendGrid error:", result.error);
+        setStatus("❌ Failed to send message. Please try again.");
       }
     } catch (error) {
-      setSubmitStatus("error");
-      console.error("Network error:", error);
+      setStatus("❌ Network error. Please check your connection.");
+      console.error("Form submission error:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -57,18 +55,6 @@ function Contact() {
         <p className="contact-subtitle">
           Have a question or want to work together? Send me a message.
         </p>
-
-        {submitStatus === "success" && (
-          <div className="status-message success">
-            ✅ Thank you! Your message has been sent successfully.
-          </div>
-        )}
-
-        {submitStatus === "error" && (
-          <div className="status-message error">
-            ❌ Sorry, there was an error sending your message. Please try again.
-          </div>
-        )}
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
@@ -96,18 +82,6 @@ function Contact() {
           </div>
 
           <div className="form-group">
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              value={formData.subject}
-              onChange={handleChange}
-              required
-              disabled={isSubmitting}
-            />
-          </div>
-
-          <div className="form-group">
             <textarea
               name="message"
               rows="5"
@@ -120,8 +94,18 @@ function Contact() {
           </div>
 
           <button type="submit" className="submit-btn" disabled={isSubmitting}>
-            {isSubmitting ? "📨 Sending..." : "Send Message"}
+            {isSubmitting ? "Sending..." : "Send Message"}
           </button>
+
+          {status && (
+            <div
+              className={`status-message ${
+                status.includes("✅") ? "success" : "error"
+              }`}
+            >
+              {status}
+            </div>
+          )}
         </form>
       </div>
     </section>
