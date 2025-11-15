@@ -8,11 +8,7 @@ export async function onRequestPost(context) {
     time: new Date().toISOString(),
   };
 
-  // Save in Cloudflare Logs (optional)
   console.log("New Contact Form Submission:", data);
-
-  // Send the message to your email via Cloudflare Email Routing webhook
-  // Simplest method: forward to your email using a Cloudflare Worker-style email POST
 
   await fetch("https://api.mailchannels.net/tx/v1/send", {
     method: "POST",
