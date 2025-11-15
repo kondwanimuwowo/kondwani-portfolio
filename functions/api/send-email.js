@@ -1,3 +1,4 @@
+// functions/api/send-email.js
 import sgMail from "@sendgrid/mail";
 
 export async function onRequestPost(context) {
