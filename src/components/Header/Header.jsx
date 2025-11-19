@@ -1,0 +1,84 @@
+import { useState } from "react";
+
+function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navLinks = [
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Beyond Code", href: "#beyond" },
+    { name: "Contact", href: "#contact" },
+  ];
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur-sm border-b border-dark-lighter">
+      <nav className="container-custom px-6 py-4 md:px-12 lg:px-24">
+        <div className="flex items-center justify-between">
+          <a
+            href="#hero"
+            className="text-2xl font-bold tracking-tight hover:text-indigo transition-colors duration-300"
+          >
+            <span className="gradient-text">KM</span>
+          </a>
+
+          <ul className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  className="text-gray hover:text-lightgray transition-colors duration-300 text-sm font-medium"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden text-lightgray p-2"
+            aria-label="Toggle menu"
+          >
+            <div className="w-6 h-5 flex flex-col justify-between">
+              <span
+                className={`w-full h-0.5 bg-lightgray transition-all duration-300 ${
+                  isMenuOpen ? "rotate-45 translate-y-2" : ""
+                }`}
+              ></span>
+              <span
+                className={`w-full h-0.5 bg-lightgray transition-all duration-300 ${
+                  isMenuOpen ? "opacity-0" : ""
+                }`}
+              ></span>
+              <span
+                className={`w-full h-0.5 bg-lightgray transition-all duration-300 ${
+                  isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                }`}
+              ></span>
+            </div>
+          </button>
+        </div>
+
+        {isMenuOpen && (
+          <ul className="md:hidden mt-4 pt-4 border-t border-dark-lighter flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-gray hover:text-lightgray transition-colors duration-300 text-base font-medium block"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </nav>
+    </header>
+  );
+}
+
+export default Header;

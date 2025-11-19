@@ -1,121 +1,116 @@
-import Card from "../ui/Card/Card.jsx";
-import "./Projects.css";
-import ganImg from "../../assets/images/gan.png";
-import weatherApp from "../../assets/images/weather-app.png";
+import { projects } from "../../data/projects";
 
-const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "The Great Achievers Network",
-      description:
-        "A website built for an NGO in Zambia. It showcases their vision, mission programs and the impact the organisation has had on the lives of young girls. Features modern and clean UI.",
-      technologies: [
-        "WordPress",
-        "CSS3/HTML5",
-        "JavaScript",
-        "PHP",
-        "MySQL",
-        "Elementor/Divi",
-      ],
-      liveLink: "https://greatachieversnetwork.org",
-      githubLink: "https://github.com/kondwanimuwowo/",
-      image: ganImg,
-      featured: true,
-    },
-
-    {
-      id: 2,
-      title: "Weather App",
-      description:
-        "Kuwala is a simple and clean weather app I built using the VisualCrossing API. It fetches real-time weather data for any location the user searches and displays conditions like temperature, humidity and wind speed.",
-      technologies: [
-        "Javascript",
-        "HTML5/CSS3",
-        "VisualCrossing API",
-        "Vite",
-        "Fetch API",
-      ],
-      liveLink: "https://kondwanimuwowo.github.io/weather-app",
-      githubLink: "https://github.com/kondwanimuwowo/weather-app",
-      image: weatherApp,
-      featured: true,
-    },
-
-    // Empty project for coming soon
-    {
-      id: 3,
-      comingSoon: true,
-    },
-  ];
-
+function Projects() {
   return (
-    <section className="projects-section">
-      <div className="projects-container">
-        <h2 className="projects-title">My Projects</h2>
-        <div className="projects-grid">
+    <section id="projects" className="section-padding bg-dark">
+      <div className="container-custom">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Selected <span className="gradient-text">Work</span>
+          </h2>
+          <p className="text-gray text-lg max-w-2xl mx-auto">
+            Projects that solve real problems
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <div
+              key={project.id}
+              className="group bg-dark-lighter border border-dark-lighter hover:border-indigo/50 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-indigo/10"
+            >
+              {/* Project Card Content */}
+              <div className="p-6 md:p-8">
+                {/* Category & Status Badge */}
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-xs font-medium text-indigo bg-indigo/10 px-3 py-1 rounded-full">
+                    {project.category}
+                  </span>
+                  {project.status && (
+                    <span className="text-xs font-medium text-emerald bg-emerald/10 px-3 py-1 rounded-full">
+                      {project.status}
+                    </span>
+                  )}
+                </div>
+
+                {/* Project Title */}
+                <h3 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-indigo transition-colors">
+                  {project.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray mb-6 leading-relaxed">
+                  {project.description}
+                </p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.tech.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="text-xs text-gray bg-dark px-3 py-1 rounded-md border border-dark"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Links */}
+                <div className="flex gap-4">
+                  {project.liveUrl && project.liveUrl !== "#" && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-indigo hover:text-indigo/80 transition-colors text-sm font-medium"
+                    >
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                      Live Demo
+                    </a>
+                  )}
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray hover:text-lightgray transition-colors text-sm font-medium"
+                    >
+                      <svg
+                        className="w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      View Code
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
-
-const ProjectCard = ({ project }) => {
-  if (project.comingSoon) {
-    return (
-      <Card className="project-card coming-soon-card" hoverable>
-        <div className="coming-soon-content">
-          <div className="coming-soon-icon">🚧</div>
-          <h3>New Project Coming Soon</h3>
-          <p>I'm working on something amazing! Stay tuned for more projects.</p>
-          <div className="construction-text">Under Construction</div>
-        </div>
-      </Card>
-    );
-  }
-
-  return (
-    <Card className="project-card" hoverable>
-      <div className="project-image">
-        <img src={project.image} alt={project.title} />
-      </div>
-
-      <div className="project-content">
-        <h3 className="project-title">{project.title}</h3>
-        <p className="project-description">{project.description}</p>
-
-        <div className="project-technologies">
-          {project.technologies.map((tech) => (
-            <span key={tech} className="tech-tag">
-              {tech}
-            </span>
-          ))}
-        </div>
-
-        <div className="project-links">
-          <a
-            href={project.liveLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link live-demo"
-          >
-            Live Demo
-          </a>
-          <a
-            href={project.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-link github"
-          >
-            GitHub
-          </a>
-        </div>
-      </div>
-    </Card>
-  );
-};
+}
 
 export default Projects;
