@@ -23,7 +23,7 @@ function Projects() {
             >
               {/* Project Image */}
               {project.image ? (
-                <div className="relative h-48 overflow-hidden bg-light">
+                <div className="relative h-80 overflow-hidden bg-light">
                   <img
                     src={project.image}
                     alt={project.title}
