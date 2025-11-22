@@ -1,26 +1,25 @@
 export const beyondCode = {
   takuza: {
-    title: "TAKUZA - Anti-Trafficking Work",
-    subtitle: "Transit Monitor | Love Justice International",
+    title: "TAKUZA",
+    subtitle: "Transit Monitor | Anti-Human Trafficking",
     description:
       "Saving lives from modern-day slavery, one interception at a time",
-    impact: [
-      "4 monitoring stations across Zambia",
-      "50+ children sponsored back to school",
-      "Preventing trafficking before it happens",
-    ],
     details:
-      "Working as a Transit Monitor with TAKUZA under Love Justice International. We intercept potential trafficking cases at key transit points, focusing on child labor prevention in Lusaka's compounds.",
+      "Working as a Transit Monitor under Love Justice International, intercepting potential trafficking cases at key transit points in Zambia.",
+    logo: "/images/logos/takuza-logo.png",
+    partnerLogo: "/images/logos/lovejustice-logo.png",
+    partnerName: "Love Justice International",
     link: null,
     type: "humanitarian",
   },
 
   smileFx: {
-    title: "Smile FX Trades",
+    title: "Smile FX Traders",
     subtitle: "Founder & Lead Trader",
-    description: "Building Zambia's premier forex trading community",
+    description: "Building Zambia's forex trading community",
     details:
-      "Training local traders and launching a rebranded platform for the Zambian forex market. Combining technical analysis with mentorship.",
+      "Training local traders and building a platform for the Zambian forex market.",
+    logo: "/images/logos/smilefxtraders.png",
     link: "https://smilefxtraders.com",
     status: "Coming Soon",
     type: "business",
@@ -35,7 +34,7 @@ export const beyondCode = {
     {
       icon: "♟️",
       label: "Chess",
-      description: "Strategic thinking on and off the board",
+      description: "Strategic thinking off the board",
     },
   ],
 };

@@ -4,25 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Simplified color naming for Tailwind v3
+        light: "#FFFFFF",
+        "light-secondary": "#F5F5F5",
         dark: "#0A0A0A",
-        "dark-lighter": "#1A1A1A",
-        indigo: "#6366F1",
-        emerald: "#10B981",
-        lightgray: "#FAFAFA",
-        gray: "#A1A1AA",
+        "dark-secondary": "#1A1A1A",
+        red: "#DC2626",
+        "red-hover": "#EF4444",
+        "red-dark": "#B91C1C",
+        gray: "#6B7280",
+        "gray-light": "#9CA3AF",
+        "border-light": "#E5E7EB",
+        "border-dark": "#D1D5DB",
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-      },
-      animation: {
-        fadeIn: "fadeIn 0.3s ease-in",
-      },
-      keyframes: {
-        fadeIn: {
-          "0%": { opacity: "0", transform: "translateY(-10px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
       },
     },
   },

@@ -2,51 +2,71 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center section-padding pt-32"
+      className="min-h-screen flex items-center justify-center section-padding pt-32 bg-light"
     >
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <p className="text-emerald text-sm md:text-base font-medium tracking-wide uppercase">
+            <p className="text-red text-sm md:text-base font-medium tracking-wide uppercase">
               Welcome to my portfolio
             </p>
-
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-dark">
               Hi, I'm <span className="gradient-text">Kondwani.</span>
+              <br />
             </h1>
-
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mt-2">
+            <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-snug">
               I'm a Front-End Developer expanding into{" "}
-              <span className="text-indigo">Full-Stack Development</span>
+              <span className="text-red">Full-Stack Development</span>
             </h2>
 
             <p className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
-              Building digital solutions. Passionate about clean code, user
-              experience, and fighting human trafficking in Lusaka, Zambia 🇿🇲.
+              Building digital solutions from Lusaka, Zambia 🇿🇲. Self-taught
+              developer passionate about clean code, user experience, and
+              fighting human trafficking.
+              <span className="text-dark font-medium block mt-2">
+                Open to freelance projects and remote opportunities.
+              </span>
             </p>
-
             <div className="flex flex-wrap gap-4 pt-4">
               <a
                 href="#projects"
-                className="px-8 py-3 bg-indigo hover:bg-indigo/90 text-white font-medium rounded-lg transition-all duration-300"
+                className="px-8 py-3 bg-red hover:bg-red-hover text-white font-medium rounded-lg transition-all duration-300 hover:scale-105"
               >
                 View My Work
               </a>
-
+              <a
+                href="/resume.pdf"
+                download="Kondwani_Muwowo_Resume.pdf"
+                className="px-8 py-3 bg-dark hover:bg-dark-secondary text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 flex items-center gap-2"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                Download Resume
+              </a>
               <a
                 href="#contact"
-                className="px-8 py-3 border-2 border-emerald text-emerald hover:bg-emerald hover:text-dark font-medium rounded-lg transition-all duration-300"
+                className="px-8 py-3 border-2 border-red text-red hover:bg-red hover:text-white font-medium rounded-lg transition-all duration-300"
               >
                 Get In Touch
               </a>
             </div>
-
             <div className="flex gap-6 pt-6">
               <a
                 href="https://github.com/kondwanimuwowo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray hover:text-indigo transition-colors duration-300"
+                className="text-gray hover:text-red transition-colors duration-300"
                 aria-label="GitHub"
               >
                 <svg
@@ -62,12 +82,11 @@ function Hero() {
                   />
                 </svg>
               </a>
-
               <a
                 href="https://linkedin.com/in/kondwanimuwowo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray hover:text-indigo transition-colors duration-300"
+                className="text-gray hover:text-red transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -79,12 +98,11 @@ function Hero() {
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                 </svg>
               </a>
-
               <a
                 href="https://x.com/kondwanimuwow0"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray hover:text-indigo transition-colors duration-300"
+                className="text-gray hover:text-red transition-colors duration-300"
                 aria-label="X (Twitter)"
               >
                 <svg
@@ -98,12 +116,10 @@ function Hero() {
               </a>
             </div>
           </div>
-
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo to-emerald rounded-full blur-2xl opacity-20"></div>
-
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-indigo/30 overflow-hidden bg-indigo flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-red to-red-hover rounded-full blur-2xl opacity-20"></div>
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-red/30 overflow-hidden bg-light-secondary flex items-center justify-center">
                 <img
                   src="/kondwani.png"
                   alt="Kondwani Muwowo"
@@ -127,5 +143,4 @@ function Hero() {
     </section>
   );
 }
-
 export default Hero;

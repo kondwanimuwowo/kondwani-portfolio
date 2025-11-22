@@ -2,42 +2,26 @@ import { useState } from "react";
 
 function About() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleExpand = () => {
-    setIsExpanded(true);
-  };
-
-  const handleCollapse = () => {
-    setIsAnimating(true);
-    // Wait for animation to complete before hiding content
-    setTimeout(() => {
-      setIsExpanded(false);
-      setIsAnimating(false);
-    }, 300);
-  };
 
   return (
-    <section id="about" className="section-padding bg-dark-lighter">
+    <section id="about" className="section-padding bg-light-secondary">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              From <span className="text-emerald">Chingola</span> to{" "}
-              <span className="text-indigo">Code</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
+              From <span className="text-red">Chingola</span> to{" "}
+              <span className="gradient-text">Code</span>
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-indigo to-emerald mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-red to-red-hover mx-auto"></div>
           </div>
 
           {/* Bio Content */}
           <div className="space-y-6 text-gray text-lg leading-relaxed">
             <p>
               I'm{" "}
-              <span className="text-lightgray font-semibold">
-                Kondwani Muwowo
-              </span>
-              , born in Chingola on the Copperbelt. My path has never been a
+              <span className="text-dark font-semibold">Kondwani Muwowo</span>,
+              born in Chingola on the Copperbelt. My path has never been a
               straight line, but every step has carried the same purpose—serve,
               build, and lift people up.
             </p>
@@ -45,12 +29,12 @@ function About() {
             {/* Read More Toggle */}
             {!isExpanded && (
               <button
-                onClick={handleExpand}
-                className="flex items-center gap-2 text-indigo hover:text-indigo/80 transition-colors font-medium group"
+                onClick={() => setIsExpanded(true)}
+                className="flex items-center gap-2 text-red hover:text-red-hover transition-colors font-medium group"
               >
                 Read my full story
                 <svg
-                  className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                  className="w-4 h-4 group-hover:translate-y-1 transition-transform"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -66,24 +50,15 @@ function About() {
             )}
 
             {/* Expandable Content */}
-            {(isExpanded || isAnimating) && (
-              <div
-                className={`
-                  transition-all duration-300 ease-in-out
-                  ${
-                    isExpanded && !isAnimating
-                      ? "animate-fadeIn opacity-100"
-                      : "opacity-0 transform -translate-y-2"
-                  }
-                `}
-              >
+            {isExpanded && (
+              <>
                 <p>
                   For five years, I served as a{" "}
-                  <span className="text-emerald font-medium">
+                  <span className="text-red font-medium">
                     Lead Pastor (Branch Pastor)
                   </span>
                   , under{" "}
-                  <span className="text-indigo font-medium">
+                  <span className="text-dark font-medium">
                     The Living Epistles Church
                   </span>{" "}
                   where my leadership and communication skills developed.
@@ -94,7 +69,7 @@ function About() {
 
                 <p>
                   My tech journey began with WordPress sites. Then in{" "}
-                  <span className="text-indigo font-medium">mid-2024</span> I
+                  <span className="text-red font-medium">mid-2024</span> I
                   discovered programming. Since then, I've been learning the
                   craft as a front-end developer and steadily growing toward
                   full-stack development with Node.js and backend tools.
@@ -102,7 +77,7 @@ function About() {
 
                 <p>
                   Today, I serve as a{" "}
-                  <span className="text-emerald font-medium">
+                  <span className="text-red font-medium">
                     Transit Monitor with TAKUZA
                   </span>{" "}
                   under Love Justice International. It's ministry in
@@ -115,7 +90,7 @@ function About() {
 
                 <p>
                   I also volunteer with{" "}
-                  <span className="text-emerald font-medium">
+                  <span className="text-red font-medium">
                     The Great Achievers Network
                   </span>
                   , where I built their website and support their digital
@@ -125,7 +100,7 @@ function About() {
 
                 <p>
                   Beyond humanitarian work, I run{" "}
-                  <span className="text-indigo font-medium">
+                  <span className="text-dark font-medium">
                     Smile FX Traders
                   </span>
                   , training forex traders across Zambia. And when I'm not
@@ -133,7 +108,7 @@ function About() {
                   thinking three moves ahead on a chessboard.
                 </p>
 
-                <p className="text-lightgray font-medium pt-4">
+                <p className="text-dark font-medium pt-4">
                   My life is a blend of faith, technology, and service—and I'm
                   building a future where all three work together to create real
                   impact.
@@ -141,8 +116,8 @@ function About() {
 
                 {/* Show Less Button */}
                 <button
-                  onClick={handleCollapse}
-                  className="flex items-center gap-2 text-gray hover:text-lightgray transition-colors text-sm font-medium group mt-4"
+                  onClick={() => setIsExpanded(false)}
+                  className="flex items-center gap-2 text-gray hover:text-dark transition-colors text-sm font-medium group"
                 >
                   Show less
                   <svg
@@ -159,32 +134,30 @@ function About() {
                     />
                   </svg>
                 </button>
-              </div>
+              </>
             )}
           </div>
 
-          {/* Quick Stats - Always Visible */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 mt-8 border-t border-dark">
+          {/* Quick Stats - Code Focused */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 mt-8 border-t border-border-light">
             <div className="text-center">
-              <div className="text-3xl font-bold text-indigo mb-2">5yrs</div>
-              <div className="text-sm text-gray">Leadership Experience</div>
+              <div className="text-3xl font-bold text-red mb-2">5+</div>
+              <div className="text-sm text-gray">Clients Served</div>
             </div>
 
             <div className="text-center">
-              <div className="text-3xl font-bold text-emerald mb-2">50+</div>
-              <div className="text-sm text-gray">
-                Children Sponsored through LJI
-              </div>
+              <div className="text-3xl font-bold text-dark mb-2">10+</div>
+              <div className="text-sm text-gray">Technologies Used</div>
             </div>
 
             <div className="text-center">
-              <div className="text-3xl font-bold text-indigo mb-2">2</div>
-              <div className="text-sm text-gray">Monitoring Stations</div>
+              <div className="text-3xl font-bold text-red mb-2">12+</div>
+              <div className="text-sm text-gray">Months Coding</div>
             </div>
 
             <div className="text-center">
-              <div className="text-3xl font-bold text-emerald mb-2">2024</div>
-              <div className="text-sm text-gray">Started Coding</div>
+              <div className="text-3xl font-bold text-dark mb-2">5+</div>
+              <div className="text-sm text-gray">Websites Built</div>
             </div>
           </div>
         </div>

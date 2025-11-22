@@ -1,10 +1,10 @@
 function Contact() {
   return (
-    <section id="contact" className="section-padding bg-dark-lighter">
+    <section id="contact" className="section-padding bg-light-secondary">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           {/* Section Header */}
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-dark">
             Let's Build <span className="gradient-text">Something</span>
           </h2>
 
@@ -14,19 +14,19 @@ function Contact() {
           </p>
 
           {/* What I'm Looking For */}
-          <div className="bg-dark border border-indigo/30 rounded-lg p-6 mb-12 max-w-2xl mx-auto">
+          <div className="bg-light border border-red/20 rounded-lg p-6 mb-12 max-w-2xl mx-auto">
             <p className="text-sm text-gray mb-3">🎯 Currently Open To:</p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <span className="text-xs bg-indigo/10 text-indigo px-3 py-1 rounded-full">
+              <span className="text-xs bg-red/10 text-red px-3 py-1 rounded-full">
                 Freelance Projects
               </span>
-              <span className="text-xs bg-indigo/10 text-indigo px-3 py-1 rounded-full">
+              <span className="text-xs bg-red/10 text-red px-3 py-1 rounded-full">
                 Remote Opportunities
               </span>
-              <span className="text-xs bg-indigo/10 text-indigo px-3 py-1 rounded-full">
+              <span className="text-xs bg-red/10 text-red px-3 py-1 rounded-full">
                 Front-End Roles
               </span>
-              <span className="text-xs bg-emerald/10 text-emerald px-3 py-1 rounded-full">
+              <span className="text-xs bg-dark/10 text-dark px-3 py-1 rounded-full">
                 Purpose-Driven Companies
               </span>
             </div>
@@ -36,7 +36,7 @@ function Contact() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="mailto:kondwanimuwowo@gmail.com"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo to-emerald hover:from-indigo/90 hover:to-emerald/90 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 text-lg shadow-lg shadow-indigo/20"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-red hover:bg-red-hover text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 text-lg shadow-lg shadow-red/20"
             >
               <svg
                 className="w-6 h-6"
@@ -57,7 +57,7 @@ function Contact() {
             <a
               href="/resume.pdf"
               download="Kondwani_Muwowo_Resume.pdf"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-dark border-2 border-indigo hover:bg-indigo text-indigo hover:text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 text-lg"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-light border-2 border-dark hover:bg-dark text-dark hover:text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 text-lg"
             >
               <svg
                 className="w-6 h-6"
@@ -77,7 +77,7 @@ function Contact() {
           </div>
 
           {/* Alternative Contact Methods */}
-          <div className="mt-12 pt-12 border-t border-dark">
+          <div className="mt-12 pt-12 border-t border-border-light">
             <p className="text-gray text-sm mb-6">Or find me on</p>
             <div className="flex justify-center gap-6">
               <a
@@ -86,9 +86,9 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="group flex flex-col items-center gap-2"
               >
-                <div className="w-12 h-12 bg-dark border border-gray/20 hover:border-indigo rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                <div className="w-12 h-12 bg-light border border-border-light hover:border-red rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
                   <svg
-                    className="w-6 h-6 text-gray group-hover:text-indigo transition-colors"
+                    className="w-6 h-6 text-gray group-hover:text-red transition-colors"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -99,7 +99,7 @@ function Contact() {
                     />
                   </svg>
                 </div>
-                <span className="text-xs text-gray group-hover:text-indigo transition-colors">
+                <span className="text-xs text-gray group-hover:text-red transition-colors">
                   GitHub
                 </span>
               </a>
@@ -110,16 +110,16 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="group flex flex-col items-center gap-2"
               >
-                <div className="w-12 h-12 bg-dark border border-gray/20 hover:border-indigo rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                <div className="w-12 h-12 bg-light border border-border-light hover:border-red rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
                   <svg
-                    className="w-6 h-6 text-gray group-hover:text-indigo transition-colors"
+                    className="w-6 h-6 text-gray group-hover:text-red transition-colors"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
                 </div>
-                <span className="text-xs text-gray group-hover:text-indigo transition-colors">
+                <span className="text-xs text-gray group-hover:text-red transition-colors">
                   LinkedIn
                 </span>
               </a>
@@ -130,16 +130,16 @@ function Contact() {
                 rel="noopener noreferrer"
                 className="group flex flex-col items-center gap-2"
               >
-                <div className="w-12 h-12 bg-dark border border-gray/20 hover:border-indigo rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                <div className="w-12 h-12 bg-light border border-border-light hover:border-red rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110">
                   <svg
-                    className="w-6 h-6 text-gray group-hover:text-indigo transition-colors"
+                    className="w-6 h-6 text-gray group-hover:text-red transition-colors"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
                 </div>
-                <span className="text-xs text-gray group-hover:text-indigo transition-colors">
+                <span className="text-xs text-gray group-hover:text-red transition-colors">
                   X / Twitter
                 </span>
               </a>

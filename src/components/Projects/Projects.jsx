@@ -2,11 +2,11 @@ import { projects } from "../../data/projects";
 
 function Projects() {
   return (
-    <section id="projects" className="section-padding bg-dark">
+    <section id="projects" className="section-padding bg-light">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
             Selected <span className="gradient-text">Work</span>
           </h2>
           <p className="text-gray text-lg max-w-2xl mx-auto">
@@ -19,38 +19,71 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-dark-lighter border border-dark-lighter hover:border-indigo/50 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-indigo/10"
+              className="group bg-light-secondary border border-border-light hover:border-red/50 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-red/10"
             >
+              {/* Project Image */}
+              {project.image ? (
+                <div className="relative h-48 overflow-hidden bg-light">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      e.target.parentElement.innerHTML = `
+                        <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-red/10 to-dark/5">
+                          <span class="text-4xl font-bold text-red/20">${project.title.charAt(
+                            0
+                          )}</span>
+                        </div>
+                      `;
+                    }}
+                  />
+                  {/* Overlay on hover */}
+                  <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/10 transition-all duration-300"></div>
+                </div>
+              ) : (
+                <div className="h-48 flex items-center justify-center bg-gradient-to-br from-red/5 to-dark/5">
+                  <div className="text-center">
+                    <span className="text-5xl font-bold text-red/20">
+                      {project.title.charAt(0)}
+                    </span>
+                    {project.status && (
+                      <p className="text-xs text-gray mt-2">{project.status}</p>
+                    )}
+                  </div>
+                </div>
+              )}
+
               {/* Project Card Content */}
-              <div className="p-6 md:p-8">
+              <div className="p-6">
                 {/* Category & Status Badge */}
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-medium text-indigo bg-indigo/10 px-3 py-1 rounded-full">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-medium text-red bg-red/10 px-3 py-1 rounded-full">
                     {project.category}
                   </span>
                   {project.status && (
-                    <span className="text-xs font-medium text-emerald bg-emerald/10 px-3 py-1 rounded-full">
+                    <span className="text-xs font-medium text-dark bg-dark/10 px-3 py-1 rounded-full">
                       {project.status}
                     </span>
                   )}
                 </div>
 
                 {/* Project Title */}
-                <h3 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-indigo transition-colors">
+                <h3 className="text-xl font-bold mb-2 text-dark group-hover:text-red transition-colors">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray mb-6 leading-relaxed">
+                <p className="text-gray text-sm mb-4 leading-relaxed line-clamp-2">
                   {project.description}
                 </p>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, index) => (
                     <span
                       key={index}
-                      className="text-xs text-gray bg-dark px-3 py-1 rounded-md border border-dark"
+                      className="text-xs text-gray bg-light px-2 py-1 rounded border border-border-light"
                     >
                       {tech}
                     </span>
@@ -58,13 +91,13 @@ function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4">
+                <div className="flex gap-4 pt-4 border-t border-border-light">
                   {project.liveUrl && project.liveUrl !== "#" && (
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-indigo hover:text-indigo/80 transition-colors text-sm font-medium"
+                      className="flex items-center gap-2 text-red hover:text-red-hover transition-colors text-sm font-medium"
                     >
                       <svg
                         className="w-4 h-4"
@@ -87,7 +120,7 @@ function Projects() {
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray hover:text-lightgray transition-colors text-sm font-medium"
+                      className="flex items-center gap-2 text-gray hover:text-dark transition-colors text-sm font-medium"
                     >
                       <svg
                         className="w-4 h-4"
@@ -100,7 +133,7 @@ function Projects() {
                           clipRule="evenodd"
                         />
                       </svg>
-                      View Code
+                      Code
                     </a>
                   )}
                 </div>
