@@ -27,7 +27,7 @@ function About() {
             <p>
               I'm{" "}
               <span className="text-dark font-semibold">Kondwani Muwowo</span>,
-              a front-end developer from Chingola who loves building clean,
+              a front-end developer from Lusaka who loves building clean,
               thoughtful digital experiences. I started in WordPress, fell in
               love with code in 2024, and I've been leveling up ever since.
             </p>
