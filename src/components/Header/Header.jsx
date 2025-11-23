@@ -20,7 +20,7 @@ function Header() {
             href="#hero"
             className="text-2xl font-bold tracking-tight hover:text-red transition-colors duration-300"
           >
-            <span className="gradient-text">{"KM"}</span>
+            <span className="gradient-text">{"[<ondwani"}</span>
           </a>
 
           <ul className="hidden md:flex items-center gap-8">

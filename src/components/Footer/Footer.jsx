@@ -6,7 +6,7 @@ function Footer() {
       <div className="container-custom px-6 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
-          <p className="text-gray-light text-sm">
+          <p className="flex items-center flex-col text-gray-light text-sm">
             © {currentYear} Kondwani Muwowo. Built with{" "}
             <span className="text-red">React</span> &{" "}
             <span className="text-light">Tailwind CSS</span>

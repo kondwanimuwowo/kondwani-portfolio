@@ -10,7 +10,7 @@ function BeyondCode() {
             Beyond the <span className="gradient-text">Code</span>
           </h2>
           <p className="text-gray text-lg max-w-2xl mx-auto">
-            Purpose-driven work outside development
+            My purpose-driven work outside development
           </p>
         </div>
 
@@ -59,13 +59,13 @@ function BeyondCode() {
                 }}
               />
               <span className="text-xs text-gray">
-                Partner: {beyondCode.takuza.partnerName}
+                The {beyondCode.takuza.partnerName} Project
               </span>
             </div>
           </div>
 
           {/* Smile FX Card */}
-          <div className="bg-light-secondary border border-border-light hover:border-dark/30 rounded-xl p-6 transition-all duration-300">
+          <div className="bg-light-secondary border border-border-light hover:border-red/30 rounded-xl p-6 transition-all duration-300">
             <div className="flex items-start gap-4 mb-4">
               {/* Smile FX Logo */}
               <div className="w-16 h-16 rounded-lg overflow-hidden bg-light flex items-center justify-center flex-shrink-0 border border-border-light">
@@ -82,7 +82,7 @@ function BeyondCode() {
                 <h3 className="text-xl font-bold text-dark">
                   {beyondCode.smileFx.title}
                 </h3>
-                <p className="text-dark text-sm font-medium">
+                <p className="text-red text-sm font-medium">
                   {beyondCode.smileFx.subtitle}
                 </p>
               </div>

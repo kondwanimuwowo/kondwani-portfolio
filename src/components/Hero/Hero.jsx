@@ -15,17 +15,14 @@ function Hero() {
               <br />
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-snug">
-              I'm a Front-End Developer expanding into{" "}
+              I'm a Front-End Developer & UI Designer expanding into{" "}
               <span className="text-red">Full-Stack Development</span>
             </h2>
 
             <p className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
-              Building digital solutions from Lusaka, Zambia 🇿🇲. Self-taught
-              developer passionate about clean code, user experience, and
-              fighting human trafficking.
-              <span className="text-dark font-medium block mt-2">
-                Open to freelance projects and remote opportunities.
-              </span>
+              Self-taught developer passionate about clean code, user
+              experience, and fighting human trafficking. Building digital
+              solutions from Zambia 🇿🇲.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <a
@@ -35,7 +32,7 @@ function Hero() {
                 View My Work
               </a>
               <a
-                href="/resume.pdf"
+                href="/kondwani-resume.pdf"
                 download="Kondwani_Muwowo_Resume.pdf"
                 className="px-8 py-3 bg-dark hover:bg-dark-secondary text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 flex items-center gap-2"
               >
@@ -118,8 +115,8 @@ function Hero() {
           </div>
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-red to-red-hover rounded-full blur-2xl opacity-20"></div>
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-red/30 overflow-hidden bg-light-secondary flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-red to-red-hover rounded-full blur-2xl opacity-10"></div>
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-red/50 overflow-hidden bg-light-secondary flex items-center justify-center">
                 <img
                   src="/kondwani.png"
                   alt="Kondwani Muwowo"

@@ -23,11 +23,11 @@ function Projects() {
             >
               {/* Project Image */}
               {project.image ? (
-                <div className="relative h-80 overflow-hidden bg-light">
+                <div className="relative h-auto overflow-hidden bg-light">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-auto object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
                       e.target.parentElement.innerHTML = `
                         <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-red/10 to-dark/5">

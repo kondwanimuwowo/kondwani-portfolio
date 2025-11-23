@@ -43,7 +43,7 @@ export const projects = [
     tech: ["React", "Node.js", "UI/UX Design"],
     liveUrl: "https://smilefxtraders.com",
     githubUrl: null,
-    image: null,
+    image: "/images/projects/smilefx.png",
     featured: false,
     category: "Platform",
     status: "In Development",
