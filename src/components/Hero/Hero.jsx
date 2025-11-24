@@ -7,7 +7,7 @@ function Hero() {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <p className="text-red text-sm md:text-base font-medium tracking-wide uppercase">
+            <p className="text-gray text-sm md:text-base font-medium tracking-wide uppercase">
               Welcome to my portfolio
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-dark">
@@ -15,8 +15,8 @@ function Hero() {
               <br />
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-snug">
-              I'm a Front-End Developer & UI Designer expanding into{" "}
-              <span className="text-red">Full-Stack Development</span>
+              I'm a <span className="text-red">Front-End Developer</span> & UI
+              Designer expanding intoFull-Stack Development
             </h2>
 
             <p className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
@@ -127,10 +127,10 @@ function Hero() {
                   }}
                 />
                 <div className="hidden flex-col items-center justify-center text-center p-8">
-                  <span className="text-6xl font-bold gradient-text">KM</span>
-                  <p className="text-gray mt-2 text-sm">
-                    Add your avatar.jpg to /public folder
-                  </p>
+                  <span className="text-6xl font-bold gradient-text">
+                    Kondwani
+                  </span>
+                  <p className="text-gray mt-2 text-sm">Avatar.jpg</p>
                 </div>
               </div>
             </div>
