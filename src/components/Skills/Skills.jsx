@@ -86,7 +86,7 @@ function Skills() {
               {skills.frontend.map((skill, index) => (
                 <li key={index} className="flex items-center justify-between">
                   <span className="text-gray text-sm">{skill.name}</span>
-                  <span className="text-xs text-red bg-red/10 px-2 py-1 rounded">
+                  <span className="text-xs text-dark bg-dark/10 px-2 py-1 rounded">
                     {skill.level}
                   </span>
                 </li>
@@ -97,9 +97,9 @@ function Skills() {
           {/* Backend Skills */}
           <div className="bg-light border border-border-light rounded-xl p-6">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-dark/10 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-red/10 rounded-lg flex items-center justify-center">
                 <svg
-                  className="w-6 h-6 text-dark"
+                  className="w-6 h-6 text-red"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -150,7 +150,7 @@ function Skills() {
               {skills.design.map((skill, index) => (
                 <li key={index} className="flex items-center justify-between">
                   <span className="text-gray text-sm">{skill.name}</span>
-                  <span className="text-xs text-red bg-red/10 px-2 py-1 rounded">
+                  <span className="text-xs text-dark bg-dark/10 px-2 py-1 rounded">
                     {skill.level}
                   </span>
                 </li>
@@ -161,9 +161,9 @@ function Skills() {
           {/* Tools */}
           <div className="bg-light border border-border-light rounded-xl p-6">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-dark/10 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-red/10 rounded-lg flex items-center justify-center">
                 <svg
-                  className="w-6 h-6 text-dark"
+                  className="w-6 h-6 text-red"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

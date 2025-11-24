@@ -5,8 +5,18 @@ function Footer() {
     <footer className="bg-dark border-t border-dark-secondary py-8">
       <div className="container-custom px-6 md:px-12 lg:px-24">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <p>
+            <a
+              href="#hero"
+              className="text-2xl font-bold tracking-tight hover:text-red transition-colors duration-300"
+            >
+              <span className="text-red-dark hover:text-red-hover transition-colors">
+                {"[<ondwani"}
+              </span>
+            </a>
+          </p>
           {/* Copyright */}
-          <p className="flex items-center flex-col text-gray-light text-sm">
+          <p className="text-gray-light text-sm text-center">
             © {currentYear} Kondwani Muwowo. Built with{" "}
             <span className="text-red">React</span> &{" "}
             <span className="text-light">Tailwind CSS</span>

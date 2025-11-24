@@ -17,8 +17,7 @@ function About() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
-              From <span className="text-red">Chingola</span> to{" "}
-              <span className="gradient-text">Code</span>
+              Faith. Code. <span className="gradient-text">Impact</span>
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-red to-red-hover mx-auto"></div>
           </div>
@@ -27,9 +26,12 @@ function About() {
             <p>
               I'm{" "}
               <span className="text-dark font-semibold">Kondwani Muwowo</span>,
-              a front-end developer from Lusaka who loves building clean,
-              thoughtful digital experiences. I started in WordPress, fell in
-              love with code in 2024, and I've been leveling up ever since.
+              A self-taught front-end developer with a love for building clean,
+              intentional digital experiences. I started out creating websites
+              with WordPress, discovered coding in 2024, and instantly fell in
+              love. Since then I’ve been pushing myself—learning modern tools
+              like React, Node.js, and Tailwind as I expand into back-end
+              technology and consistently grow in both skill and creativity.
             </p>
 
             {!isExpanded && (
@@ -63,17 +65,26 @@ function About() {
             >
               <div ref={contentRef} className="space-y-6 pt-2">
                 <p>
-                  Before tech, I spent five years in ministry leadership. That
-                  season sharpened the way I think, work, and communicate. Today
-                  I carry that same heart into tech and humanitarian work.
+                  I’ve always loved serving people, but my four years in
+                  ministry leadership shaped the way I think, communicate, and
+                  work with people. That season taught me depth, discipline, and
+                  compassion. I carry that same heart today in both my
+                  development journey and my humanitarian work.
                 </p>
 
                 <p>
-                  I currently serve as a{" "}
-                  <span className="text-red font-medium">Transit Monitor</span>{" "}
-                  with Love Justice International, helping protect people from
-                  human trafficking. Along the way, I build websites, train
-                  young people, and stay committed to personal growth.
+                  I also fight human trafficking with Talitha Kum Zambia{" "}
+                  {"(TAKUZA)"} under the Love Justice International Project in
+                  Zambia, where I help intercept potential victims before they
+                  are exploited. It’s work that reminds me every day why impact
+                  matters. GAN is a nonprofit supporting vulnerable girls with
+                  education and practical skills.
+                </p>
+
+                <p>
+                  Besides that, I volunteer with The Great Achievers Network,
+                  where I maintain their website and handle their graphic design
+                  work to help strengthen their digital presence.
                 </p>
 
                 <p className="text-dark font-medium">
@@ -121,8 +132,8 @@ function About() {
             </div>
 
             <div className="text-center">
-              <div className="text-3xl font-bold text-dark mb-2">5+</div>
-              <div className="text-sm text-gray">Websites Built</div>
+              <div className="text-3xl font-bold text-dark mb-2">100%</div>
+              <div className="text-sm text-gray">Client Satisfaction</div>
             </div>
           </div>
         </div>

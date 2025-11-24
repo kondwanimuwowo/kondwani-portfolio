@@ -8,7 +8,7 @@ export const beyondCode = {
       "Working as a Transit Monitor under Love Justice International, intercepting potential trafficking cases at key transit points in Zambia.",
     logo: "/images/logos/takuza-logo.png",
     partnerLogo: "/images/logos/lovejustice-logo.png",
-    partnerName: "Love Justice International",
+    partnerName: "Love Justice Intl",
     link: null,
     type: "humanitarian",
   },
