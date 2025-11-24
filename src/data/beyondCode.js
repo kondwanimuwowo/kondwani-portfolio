@@ -15,7 +15,7 @@ export const beyondCode = {
 
   smileFx: {
     title: "Smile FX Traders",
-    subtitle: "Founder & Lead Trader",
+    subtitle: "Instructor",
     description: "Building Zambia's forex trading community",
     details:
       "Training local traders and building a platform for the Zambian forex market.",
