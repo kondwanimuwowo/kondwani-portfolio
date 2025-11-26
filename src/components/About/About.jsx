@@ -15,9 +15,9 @@ function About() {
     <section id="about" className="section-padding bg-light-secondary">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
-              Faith. Code. <span className="gradient-text">Impact</span>
+              About Me
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-red to-red-hover mx-auto"></div>
           </div>

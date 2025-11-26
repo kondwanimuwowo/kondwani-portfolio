@@ -7,8 +7,9 @@ function BeyondCode() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
-            Beyond the <span className="gradient-text">Code</span>
+            Beyond the Code
           </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-red to-red-hover mx-auto mb-6"></div>
           <p className="text-gray text-lg max-w-2xl mx-auto">
             My purpose-driven work outside development
           </p>

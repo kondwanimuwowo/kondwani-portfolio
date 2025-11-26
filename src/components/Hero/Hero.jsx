@@ -6,23 +6,21 @@ function Hero() {
     >
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <p className="text-gray text-sm md:text-base font-medium tracking-wide uppercase">
+          <div className="space-y-6 md:space-y-10">
+            <p className="text-gray text-sm md:text-base font-medium tracking-wide uppercase my-8">
               Welcome to my portfolio
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-dark">
-              Hi, I'm <span className="gradient-text">Kondwani.</span>
+              Hi, I'm Kondwani.
               <br />
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-snug">
-              I'm a <span className="text-red">Front-End Developer</span> & UI
-              Designer expanding intoFull-Stack Development
+              A <span className="text-dark">Front-End Developer</span> & UI
+              Designer expanding into Full-Stack Development
             </h2>
 
             <p className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
-              Self-taught developer passionate about clean code, user
-              experience, and fighting human trafficking. Building digital
-              solutions from Zambia 🇿🇲.
+              I'm passionate about building clean, responsive, and purposeful digital solutions. I also fight human trafficking.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <a

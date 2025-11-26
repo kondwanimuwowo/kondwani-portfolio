@@ -7,8 +7,9 @@ function Projects() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
-            Selected <span className="gradient-text">Work</span>
+            Selected Work
           </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-red to-red-hover mx-auto mb-6"></div>
           <p className="text-gray text-lg max-w-2xl mx-auto">
             Projects that solve real problems
           </p>

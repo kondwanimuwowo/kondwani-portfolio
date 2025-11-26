@@ -4,9 +4,10 @@ function Contact() {
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           {/* Section Header */}
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-dark">
-            Let's Build <span className="gradient-text">Something</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-dark">
+            Let's Build Something
           </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-red to-red-hover mx-auto mb-6"></div>
 
           <p className="text-gray text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
             Open to freelance projects, collaborations, and conversations about

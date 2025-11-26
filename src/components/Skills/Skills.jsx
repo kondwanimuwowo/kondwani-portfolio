@@ -35,8 +35,9 @@ function Skills() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">
-            Tech <span className="gradient-text">Stack</span>
+            Tech Stack
           </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-red to-red-hover mx-auto mb-6"></div>
           <p className="text-gray text-lg max-w-2xl mx-auto">
             Tools and technologies I use to build & design
           </p>
