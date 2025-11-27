@@ -12,6 +12,7 @@ import {
   SiFigma,
   SiAdobe,
 } from "react-icons/si";
+import { VscCode } from "react-icons/vsc";
 
 // Icon mapping
 const iconMap = {
@@ -26,6 +27,7 @@ const iconMap = {
   git: SiGit,
   figma: SiFigma,
   adobe: SiAdobe,
+  vscode: VscCode,
 };
 
 function Skills() {

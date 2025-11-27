@@ -7,7 +7,7 @@ function Hero() {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 md:space-y-10">
-            <p className="text-gray text-sm md:text-base font-medium tracking-wide uppercase my-8">
+            <p className="text-red/70 text-sm md:text-base font-medium tracking-wide uppercase my-8">
               Welcome to my portfolio
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-dark">
@@ -15,12 +15,12 @@ function Hero() {
               <br />
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-snug">
-              A <span className="text-dark">Front-End Developer</span> & UI
+              A <span className="text-dark leading-relaxed">Front-End Developer</span> & UI
               Designer expanding into Full-Stack Development
             </h2>
 
             <p className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
-              I'm passionate about building clean, responsive, and purposeful digital solutions. I also fight human trafficking.
+              I'm passionate about building clean, thoughtful and smooth digital experiences. Beyond tech, I’m committed to the fight against human trafficking and create meaningful impact in Zambia and the world at large.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <a
@@ -111,10 +111,10 @@ function Hero() {
               </a>
             </div>
           </div>
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-evenly">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-red to-red-hover rounded-full blur-2xl opacity-10"></div>
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-red/50 overflow-hidden bg-light-secondary flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-dark to-red rounded-full blur-2xl opacity-0"></div>
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-1 border-red/80 overflow-hidden bg-red flex items-center justify-center">
                 <img
                   src="/kondwani.png"
                   alt="Kondwani Muwowo"

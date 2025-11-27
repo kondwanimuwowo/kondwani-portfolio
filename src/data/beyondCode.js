@@ -3,9 +3,9 @@ export const beyondCode = {
     title: "TAKUZA",
     subtitle: "Transit Monitor | Anti-Human Trafficking",
     description:
-      "Saving lives from modern-day slavery, one interception at a time",
+      "Saving lives from modern-day slavery in Zambia",
     details:
-      "Working as a Transit Monitor under Love Justice International, intercepting potential trafficking cases at key transit points in Zambia.",
+      "Working as a Transit Monitor under TAKUZA, in partnership with Love Justice International, intercepting potential victims of trafficking at key transit points in Zambia.",
     logo: "/images/logos/takuza-logo.png",
     partnerLogo: "/images/logos/lovejustice-logo.png",
     partnerName: "Love Justice Intl",
@@ -23,6 +23,18 @@ export const beyondCode = {
     link: "https://smilefxtraders.com",
     status: "Coming Soon",
     type: "business",
+  },
+
+  gan: {
+    title: "The Great Achievers Network",
+    subtitle: "volunteer Developer & Designer",
+    description: "Designing and maintaining GAN's digital presence",
+    details:
+      "Volunteering as a developer and designer for The Great Achievers Network (GAN), a nonprofit organization dedicated to empowering vulnerable girls through education and practical skills.",
+    logo: "/images/logos/gan-logo.png",
+    link: "https://greatachieversnetwork.org",
+    status: "Ongoing",
+    type: "humanitarian",
   },
 
   lifestyle: [

@@ -25,7 +25,7 @@ function About() {
           <div className="space-y-6 text-gray text-lg leading-relaxed">
             <p>
               I'm{" "}
-              <span className="text-dark font-semibold">Kondwani Muwowo</span>,
+              <span className="text-red-dark font-semibold">Kondwani Muwowo</span>,
               A self-taught front-end developer with a love for building clean,
               intentional digital experiences. I started out creating websites
               with WordPress, discovered coding in 2024, and instantly fell in
@@ -65,30 +65,27 @@ function About() {
             >
               <div ref={contentRef} className="space-y-6 pt-2">
                 <p>
-                  I’ve always loved serving people, but my four years in
-                  ministry leadership shaped the way I think, communicate, and
-                  work with people. That season taught me depth, discipline, and
+                  I’ve always loved serving people, but my time in ministry
+                  leadership shaped the way I think, communicate, and work with
+                  people. That season taught me depth, discipline, and
                   compassion. I carry that same heart today in both my
                   development journey and my humanitarian work.
                 </p>
 
                 <p>
-                  I also fight human trafficking with Talitha Kum Zambia{" "}
-                  {"(TAKUZA)"} under the Love Justice International Project in
-                  Zambia, where I help intercept potential victims before they
-                  are exploited. It’s work that reminds me every day why impact
-                  matters. GAN is a nonprofit supporting vulnerable girls with
-                  education and practical skills.
+                  I also fight human trafficking with Talitha Kum Zambia (TAKUZA) under the Love Justice International Project, where I help intercept potential victims of human trafficking before they are exploited. It’s work that reminds me every day why impact matters.
                 </p>
 
                 <p>
-                  Besides that, I volunteer with The Great Achievers Network,
+                  Besides that, I volunteer with The Great Achievers Network (GAN),
                   where I maintain their website and handle their graphic design
-                  work to help strengthen their digital presence.
+                  work to help strengthen their digital presence. 
+                  <br />
+                  GAN is a nonprofit supporting vulnerable girls with education and practical skills. 
                 </p>
 
                 <p className="text-dark font-medium">
-                  My journey blends faith, technology, and impact — and I'm just
+                  My journey blends faith, technology, and impact &mdash; and I'm just
                   getting started.
                 </p>
 
