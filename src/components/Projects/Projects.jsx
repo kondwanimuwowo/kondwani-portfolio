@@ -1,8 +1,14 @@
 import { projects } from "../../data/projects";
+import { generateProjectStructuredData } from "../../utils/seo";
 
 function Projects() {
+  const structuredData = generateProjectStructuredData(projects);
+
   return (
     <section id="projects" className="section-padding bg-light fade-in">
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-16">

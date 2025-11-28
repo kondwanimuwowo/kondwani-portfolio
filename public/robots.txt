@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kondwanimuwowo.com/sitemap.xml
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+
+# Development and staging blockers
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
