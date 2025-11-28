@@ -12,7 +12,7 @@ function About() {
   }, [isExpanded]);
 
   return (
-    <section id="about" className="section-padding bg-light-secondary">
+    <section id="about" className="section-padding bg-light-secondary fade-in">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-6">

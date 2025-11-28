@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center section-padding pt-32 bg-light"
+      className="min-h-screen flex items-center justify-center section-padding pt-32 bg-light fade-in"
     >
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section id="contact" className="section-padding bg-light-secondary">
+    <section id="contact" className="section-padding bg-light-secondary fade-in">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           {/* Section Header */}
@@ -57,9 +57,9 @@ function Contact() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/kondwani-resume.pdf"
               download="Kondwani_Muwowo_Resume.pdf"
-              className="inline-flex items-center gap-3 px-8 py-3 bg-light border-2 border-dark hover:bg-dark text-dark hover:text-white font-semibold rounded-full transition-all duration-300 text-lg"
+              className="inline-flex items-center gap-3 px-8 py-3 bg-dark border-1 border-dark hover:bg-dark-secondary text-white font-semibold rounded-full transition-all duration-300 text-lg"
             >
               <svg
                 className="w-6 h-6"

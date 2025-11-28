@@ -32,7 +32,7 @@ const iconMap = {
 
 function Skills() {
   return (
-    <section id="skills" className="section-padding bg-light-secondary">
+    <section id="skills" className="section-padding bg-light-secondary fade-in">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-16">

@@ -8,7 +8,7 @@ const iconMap = {
 
 function BeyondCode() {
   return (
-    <section id="beyond" className="section-padding bg-light">
+    <section id="beyond" className="section-padding bg-light fade-in">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-12">

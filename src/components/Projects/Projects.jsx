@@ -2,7 +2,7 @@ import { projects } from "../../data/projects";
 
 function Projects() {
   return (
-    <section id="projects" className="section-padding bg-light">
+    <section id="projects" className="section-padding bg-light fade-in">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center mb-16">

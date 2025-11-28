@@ -41,5 +41,5 @@ export const techStack = [
   { name: "Git", icon: "git" },
   { name: "Figma", icon: "figma" },
   { name: "Adobe CC", icon: "adobe" },
-  { name: "VSCode", icon: "vscode" },
+  { name: "VS Code", icon: "vscode" },
 ];
