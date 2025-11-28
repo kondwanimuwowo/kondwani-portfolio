@@ -6,7 +6,7 @@ function Hero() {
     >
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 md:space-y-10">
+          <div className="space-y-5 md:space-y-10">
             <p className="text-gray text-sm md:text-base font-normal tracking-wide uppercase my-8">
               Welcome to my digital space!
             </p>
@@ -16,7 +16,7 @@ function Hero() {
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-normal">
               I'm a <span className="text-dark">Front-End Developer</span>, UI
-              Designer and anti-human trafficking advocate.
+              Designer and fighter against human trafficking.
             </h2>
 
             <p className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
