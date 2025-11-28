@@ -1,4 +1,10 @@
 import { beyondCode } from "../../data/beyondCode";
+import { FaDumbbell, FaChess } from "react-icons/fa"; // added
+
+const iconMap = {
+  FaDumbbell,
+  FaChess,
+};
 
 function BeyondCode() {
   return (
@@ -35,7 +41,7 @@ function BeyondCode() {
                 <h3 className="text-xl font-bold text-dark">
                   {beyondCode.takuza.title}
                 </h3>
-                <p className="text-red text-sm font-medium">
+                <p className="text-gray/80 italic text-sm font-medium">
                   {beyondCode.takuza.subtitle}
                 </p>
               </div>
@@ -60,7 +66,7 @@ function BeyondCode() {
                 }}
               />
               <span className="text-xs text-gray">
-                The {beyondCode.takuza.partnerName} Project
+                Partner: {beyondCode.takuza.partnerName}
               </span>
             </div>
           </div>
@@ -83,7 +89,7 @@ function BeyondCode() {
                 <h3 className="text-xl font-bold text-dark">
                   {beyondCode.gan.title}
                 </h3>
-                <p className="text-red text-sm font-medium">
+                <p className="text-gray/80 text-sm italic font-medium">
                   {beyondCode.gan.subtitle}
                 </p>
               </div>
@@ -148,7 +154,7 @@ function BeyondCode() {
                 <h3 className="text-xl font-bold text-dark">
                   {beyondCode.smileFx.title}
                 </h3>
-                <p className="text-red text-sm font-medium">
+                <p className="text-gray/80 italic text-sm font-medium">
                   {beyondCode.smileFx.subtitle}
                 </p>
               </div>
@@ -198,22 +204,31 @@ function BeyondCode() {
 
         {/* Lifestyle - Inline & Compact */}
         <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto">
-          {beyondCode.lifestyle.map((item, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-3 bg-light-secondary border border-border-light rounded-full px-5 py-2"
-            >
-              <span className="text-2xl">{item.icon}</span>
-              <div>
-                <span className="text-dark font-medium text-sm">
-                  {item.label}
+          {beyondCode.lifestyle.map((item, index) => {
+            const Icon = iconMap[item.icon];
+            return (
+              <div
+                key={index}
+                className="flex items-center gap-3 bg-light-secondary border border-border-light rounded-full px-5 py-2"
+              >
+                <span className="text-2xl">
+                  {Icon ? (
+                    <Icon aria-hidden="true" className="text-2xl" />
+                  ) : (
+                    item.icon
+                  )}
                 </span>
-                <span className="text-gray text-xs ml-2">
-                  {item.description}
-                </span>
+                <div>
+                  <span className="text-dark font-medium text-sm">
+                    {item.label}
+                  </span>
+                  <span className="text-gray text-xs ml-2">
+                    {item.description}
+                  </span>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

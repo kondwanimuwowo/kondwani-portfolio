@@ -1,6 +1,6 @@
 export const beyondCode = {
   takuza: {
-    title: "TAKUZA",
+    title: "Talitha Kum Zambia",
     subtitle: "Transit Monitor | Anti-Human Trafficking",
     description:
       "Saving lives from modern-day slavery in Zambia",
@@ -27,26 +27,26 @@ export const beyondCode = {
 
   gan: {
     title: "The Great Achievers Network",
-    subtitle: "volunteer Developer & Designer",
+    subtitle: "Volunteer Developer & Designer",
     description: "Designing and maintaining GAN's digital presence",
     details:
       "Volunteering as a developer and designer for The Great Achievers Network (GAN), a nonprofit organization dedicated to empowering vulnerable girls through education and practical skills.",
     logo: "/images/logos/gan-logo.png",
     link: "https://greatachieversnetwork.org",
-    status: "Ongoing",
+    status: "Volunteer",
     type: "humanitarian",
   },
 
   lifestyle: [
     {
-      icon: "💪",
+      icon: "FaDumbbell",
       label: "Fitness",
       description: "Gym 5-6 days a week",
     },
     {
-      icon: "♟️",
+      icon: "FaChess",
       label: "Chess",
-      description: "Strategic thinking off the board",
+      description: "I like to play chess too",
     },
   ],
 };

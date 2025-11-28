@@ -10,24 +10,25 @@ function Contact() {
           <div className="w-20 h-1 bg-gradient-to-r from-red to-red-hover mx-auto mb-6"></div>
 
           <p className="text-gray text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-            Open to freelance projects, collaborations, and conversations about
-            tech or humanitarian work.
+            Got a project in mind, feel like collaborating, or working on
+            something exciting? I’m always open to new opportunities and would
+            love to hear from you!
           </p>
 
           {/* What I'm Looking For */}
-          <div className="bg-light border border-red/20 rounded-lg p-6 mb-12 max-w-2xl mx-auto">
-            <p className="text-sm text-gray mb-3">🎯 Currently Open To:</p>
+          <div className="bg-light border-2 border-border-light rounded-xl p-10 mb-12 max-w-2xl mx-auto">
+            <p className="text-gray mb-6">Currently Open To:</p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <span className="text-xs bg-red/10 text-red px-3 py-1 rounded-full">
+              <span className="text-sm bg-red/10 text-gray px-4 py-2 rounded-full">
                 Freelance Projects
               </span>
-              <span className="text-xs bg-red/10 text-red px-3 py-1 rounded-full">
+              <span className="text-sm bg-red/10 text-gray px-4 py-2 rounded-full">
                 Remote Opportunities
               </span>
-              <span className="text-xs bg-red/10 text-red px-3 py-1 rounded-full">
+              <span className="text-sm bg-red/10 text-gray px-4 py-2 rounded-full">
                 Front-End Roles
               </span>
-              <span className="text-xs bg-dark/10 text-dark px-3 py-1 rounded-full">
+              <span className="text-sm bg-dark/10 text-gray px-4 py-2 rounded-full">
                 Purpose-Driven Companies
               </span>
             </div>
@@ -37,7 +38,7 @@ function Contact() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="mailto:kondwanimuwowo@gmail.com"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-red hover:bg-red-hover text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 text-lg shadow-lg shadow-red/20"
+              className="inline-flex items-center gap-3 px-8 py-3 bg-red hover:bg-red-hover text-white font-semibold rounded-full transition-all duration-300  text-lg shadow-sm shadow-red/20"
             >
               <svg
                 className="w-6 h-6"
@@ -58,7 +59,7 @@ function Contact() {
             <a
               href="/resume.pdf"
               download="Kondwani_Muwowo_Resume.pdf"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-light border-2 border-dark hover:bg-dark text-dark hover:text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 text-lg"
+              className="inline-flex items-center gap-3 px-8 py-3 bg-light border-2 border-dark hover:bg-dark text-dark hover:text-white font-semibold rounded-full transition-all duration-300 text-lg"
             >
               <svg
                 className="w-6 h-6"
@@ -73,7 +74,7 @@ function Contact() {
                   d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 />
               </svg>
-              Download Resume
+              Download CV
             </a>
           </div>
 

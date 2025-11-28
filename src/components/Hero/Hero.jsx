@@ -7,16 +7,16 @@ function Hero() {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 md:space-y-10">
-            <p className="text-red/70 text-sm md:text-base font-medium tracking-wide uppercase my-8">
-              Welcome to my portfolio
+            <p className="text-red text-sm md:text-base font-normal tracking-wide uppercase my-8">
+              Welcome to my digital home!
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-dark">
-              Hi, I'm Kondwani.
+              Hi, <span className="text-red">I'm Kondwani.</span>
               <br />
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-snug">
               A <span className="text-dark leading-relaxed">Front-End Developer</span> & UI
-              Designer expanding into Full-Stack Development
+              Designer crafting engaging web experiences.
             </h2>
 
             <p className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
@@ -25,14 +25,22 @@ function Hero() {
             <div className="flex flex-wrap gap-4 pt-4">
               <a
                 href="#projects"
-                className="px-8 py-3 bg-red hover:bg-red-hover text-white font-medium rounded-lg transition-all duration-300 hover:scale-105"
+                className="px-8 py-3 bg-red hover:bg-red-hover text-white font-medium rounded-full transition-all duration-300"
               >
                 View My Work
               </a>
+              
+              <a
+                href="#contact"
+                className="px-8 py-3 bg-red hover:bg-red-hover text-white font-medium rounded-full transition-all duration-300"
+              >
+                Get In Touch
+              </a>
+
               <a
                 href="/kondwani-resume.pdf"
                 download="Kondwani_Muwowo_Resume.pdf"
-                className="px-8 py-3 bg-dark hover:bg-dark-secondary text-white font-medium rounded-lg transition-all duration-300 hover:scale-105 flex items-center gap-2"
+                className="px-8 py-3 bg-dark hover:bg-dark-secondary text-white font-medium rounded-full transition-all duration-300 flex items-center gap-2"
               >
                 <svg
                   className="w-5 h-5"
@@ -48,12 +56,6 @@ function Hero() {
                   />
                 </svg>
                 Download CV
-              </a>
-              <a
-                href="#contact"
-                className="px-8 py-3 border-2 border-red text-red hover:bg-red hover:text-white font-medium rounded-lg transition-all duration-300"
-              >
-                Get In Touch
               </a>
             </div>
             <div className="flex gap-6 pt-6">
@@ -114,7 +116,7 @@ function Hero() {
           <div className="flex justify-center lg:justify-evenly">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-dark to-red rounded-full blur-2xl opacity-0"></div>
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-1 border-red/80 overflow-hidden bg-red flex items-center justify-center">
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-2 border-red overflow-hidden bg-red flex items-center justify-center">
                 <img
                   src="/kondwani.png"
                   alt="Kondwani Muwowo"

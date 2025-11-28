@@ -52,10 +52,10 @@ function Skills() {
             return (
               <div
                 key={index}
-                className="flex items-center gap-2 px-5 py-3 bg-light border border-red/20 hover:border-red hover:bg-red/5 rounded-full text-dark font-medium transition-all duration-300 hover:scale-105 cursor-default"
+                className="flex items-center gap-2 text-gray px-5 py-3 bg-light border border-border-light hover:border-red hover:bg-red/5 rounded-full text-dark font-medium transition-all duration-300 hover:scale-105 cursor-default"
               >
                 {IconComponent && (
-                  <IconComponent className="w-5 h-5 text-red" />
+                  <IconComponent className="w-6 h-6 text-gray" />
                 )}
                 <span>{tech.name}</span>
               </div>
