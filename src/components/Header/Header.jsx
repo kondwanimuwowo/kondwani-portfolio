@@ -38,22 +38,22 @@ function Header() {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-dark p-2"
+            className="md:hidden text-red p-2"
             aria-label="Toggle menu"
           >
             <div className="w-6 h-5 flex flex-col justify-between">
               <span
-                className={`w-full h-0.5 bg-dark transition-all duration-300 ${
+                className={`w-full h-0.5 bg-red transition-all duration-300 ${
                   isMenuOpen ? "rotate-45 translate-y-2" : ""
                 }`}
               ></span>
               <span
-                className={`w-full h-0.5 bg-dark transition-all duration-300 ${
+                className={`w-full h-0.5 bg-red transition-all duration-300 ${
                   isMenuOpen ? "opacity-0" : ""
                 }`}
               ></span>
               <span
-                className={`w-full h-0.5 bg-dark transition-all duration-300 ${
+                className={`w-full h-0.5 bg-red transition-all duration-300 ${
                   isMenuOpen ? "-rotate-45 -translate-y-2" : ""
                 }`}
               ></span>
