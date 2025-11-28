@@ -14,7 +14,7 @@ function Hero() {
               Hi, <span className="text-red">I'm Kondwani.</span>
               <br />
             </h1>
-            <h2 className="text-3xl md:text-3xl font-semibold text-dark leading-normal">
+            <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-normal">
               I'm a <span className="text-dark">Front-End Developer</span>, UI
               Designer and anti-human trafficking advocate.
             </h2>
