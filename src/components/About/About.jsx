@@ -65,21 +65,17 @@ function About() {
             >
               <div ref={contentRef} className="space-y-6 pt-2">
                 <p>
-                  I’ve always loved serving people, but my time in ministry
-                  leadership shaped the way I think, communicate, and work with
-                  people. That season taught me depth, discipline, and
-                  compassion. I carry that same heart today in both my
-                  development journey and my humanitarian work.
+                  I’ve always loved serving people, but my time in ministry leadership shaped how I think, communicate, and work with others. That season taught me depth, discipline, and compassion. I still carry that same heart today—both in my development journey and in my humanitarian work.
                 </p>
 
                 <p>
-                  I also fight human trafficking with Talitha Kum Zambia (TAKUZA) under the Love Justice International Project, where I help intercept potential victims of human trafficking before they are exploited. It’s work that reminds me every day why impact matters.
+                  I also fight human trafficking with Talitha Kum Zambia (TAKUZA) under the Love Justice International Project, where I help intercept potential victims of human trafficking before they are exploited and return them to safety. It’s work that reminds me every day why impact matters.
                 </p>
 
                 <p>
                   Besides that, I volunteer with The Great Achievers Network (GAN),
-                  where I maintain their website and handle their graphic design
-                  work to help strengthen their digital presence. 
+                  where I maintain their website and handle their graphic work
+                  to help strengthen their digital presence.
                   <br />
                   GAN is a nonprofit supporting vulnerable girls with education and practical skills. 
                 </p>

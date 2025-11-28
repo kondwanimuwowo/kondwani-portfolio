@@ -7,16 +7,16 @@ function Hero() {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 md:space-y-10">
-            <p className="text-red text-sm md:text-base font-normal tracking-wide uppercase my-8">
-              Welcome to my digital home!
+            <p className="text-gray text-sm md:text-base font-normal tracking-wide uppercase my-8">
+              Welcome to my digital space!
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-dark">
               Hi, <span className="text-red">I'm Kondwani.</span>
               <br />
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-snug">
-              A <span className="text-dark leading-relaxed">Front-End Developer</span> & UI
-              Designer crafting engaging web experiences.
+            <h2 className="text-3xl md:text-3xl font-semibold text-dark leading-normal">
+              I'm a <span className="text-dark">Front-End Developer</span>, UI
+              Designer and anti-human trafficking advocate.
             </h2>
 
             <p className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
@@ -116,7 +116,7 @@ function Hero() {
           <div className="flex justify-center lg:justify-evenly">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-dark to-red rounded-full blur-2xl opacity-0"></div>
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-2 border-red overflow-hidden bg-red flex items-center justify-center">
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-1 border-red overflow-hidden bg-red-hover flex items-center justify-center">
                 <img
                   src="/kondwani.png"
                   alt="Kondwani Muwowo"
