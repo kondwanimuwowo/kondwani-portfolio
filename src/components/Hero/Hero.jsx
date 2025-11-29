@@ -51,6 +51,36 @@ function Hero() {
             <motion.p variants={childVariants} className="text-gray text-sm md:text-base font-normal tracking-wide uppercase my-8">
               Welcome to my digital space!
             </motion.p>
+
+            {/* Mobile Image - Inserted between welcome and h1 */}
+            <motion.div
+              className="flex justify-center block lg:hidden"
+              variants={imageVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-dark to-red rounded-full blur-2xl opacity-0"></div>
+                <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-1 border-red overflow-hidden bg-red flex items-center justify-center">
+                  <img
+                    src="/kondwani.png"
+                    alt="Kondwani Muwowo"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.target.style.display = "none";
+                      e.target.nextSibling.style.display = "flex";
+                    }}
+                  />
+                  <div className="hidden flex-col items-center justify-center text-center p-8">
+                    <span className="text-6xl font-bold gradient-text">
+                      Kondwani
+                    </span>
+                    <p className="text-gray mt-2 text-sm">Kondwani.jpg</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
             <motion.h1 variants={childVariants} className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-dark">
               Hi, <span className="text-red">I'm Kondwani.</span>
               <br />
@@ -155,9 +185,9 @@ function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Side: Image with Scale Animation */}
+          {/* Desktop Image */}
           <motion.div
-            className="flex justify-center lg:justify-evenly"
+            className="hidden lg:flex justify-center lg:justify-evenly"
             variants={imageVariants}
             initial="hidden"
             animate="visible"
