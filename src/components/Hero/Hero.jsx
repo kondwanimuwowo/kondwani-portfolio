@@ -61,7 +61,7 @@ function Hero() {
             </motion.h2>
 
             <motion.p variants={childVariants} className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
-              I'm passionate about building clean, thoughtful and smooth digital experiences. Beyond tech, I’m committed to the fight against human trafficking and create meaningful impact in Zambia and the world at large.
+              I love building clean, thoughtful and smooth digital experiences that create meaningful impact in Zambia and beyond.
             </motion.p>
             <motion.div variants={childVariants} className="flex flex-wrap gap-4 pt-4">
               <a
@@ -164,7 +164,7 @@ function Hero() {
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-dark to-red rounded-full blur-2xl opacity-0"></div>
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-1 border-red overflow-hidden bg-red-hover flex items-center justify-center">
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-1 border-red overflow-hidden bg-red flex items-center justify-center">
                 <img
                   src="/kondwani.png"
                   alt="Kondwani Muwowo"
