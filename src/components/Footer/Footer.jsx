@@ -94,7 +94,7 @@ function Footer() {
           className="mt-6 border-t border-dark-secondary pt-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left"
         >
           <p className="text-gray-light text-sm flex-1">
-            © {currentYear} Kondwani Muwowo. Built with <span className="text-light">React</span> & <span className="text-light">Tailwind CSS</span>
+            © {currentYear} Kondwani Muwowo. Built with <span className="text-light">React</span>, <span className="text-light">framer-motion</span> & <span className="text-light">Tailwind CSS</span>
           </p>
           <a
             href="mailto:kondwanimuwowo@gmail.com"
