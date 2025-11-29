@@ -1,28 +1,69 @@
+import { motion } from "framer-motion";
+
 function Hero() {
+  // Container variants for staggering children
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        staggerChildren: 0.2, // Stagger each child element
+        delayChildren: 0.3, // Slight delay before starting
+      },
+    },
+  };
+
+  // Child variants for text elements (fade + slide up)
+  const childVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  // Image variants (scale in + fade)
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.8, ease: "easeOut", delay: 0.5 },
+    },
+  };
+
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center section-padding pt-32 bg-light fade-in"
+      className="min-h-screen flex items-center justify-center section-padding pt-32 bg-light"
     >
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-5 md:space-y-10">
-            <p className="text-gray text-sm md:text-base font-normal tracking-wide uppercase my-8">
+          {/* Left Side: Text Content with Stagger */}
+          <motion.div
+            className="space-y-5 md:space-y-10"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.p variants={childVariants} className="text-gray text-sm md:text-base font-normal tracking-wide uppercase my-8">
               Welcome to my digital space!
-            </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-dark">
+            </motion.p>
+            <motion.h1 variants={childVariants} className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-dark">
               Hi, <span className="text-red">I'm Kondwani.</span>
               <br />
-            </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-dark leading-normal">
+            </motion.h1>
+            <motion.h2 variants={childVariants} className="text-2xl md:text-3xl font-semibold text-dark leading-normal">
               I'm a <span className="text-dark">Front-End Developer</span>, UI
               Designer and fighter against human trafficking.
-            </h2>
+            </motion.h2>
 
-            <p className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
+            <motion.p variants={childVariants} className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
               I'm passionate about building clean, thoughtful and smooth digital experiences. Beyond tech, I’m committed to the fight against human trafficking and create meaningful impact in Zambia and the world at large.
-            </p>
-            <div className="flex flex-wrap gap-4 pt-4">
+            </motion.p>
+            <motion.div variants={childVariants} className="flex flex-wrap gap-4 pt-4">
               <a
                 href="#projects"
                 className="px-8 py-3 bg-red hover:bg-red-hover text-white font-medium rounded-full transition-all duration-300"
@@ -57,8 +98,8 @@ function Hero() {
                 </svg>
                 Download CV
               </a>
-            </div>
-            <div className="flex gap-6 pt-6">
+            </motion.div>
+            <motion.div variants={childVariants} className="flex gap-6 pt-6">
               <a
                 href="https://github.com/kondwanimuwowo"
                 target="_blank"
@@ -111,9 +152,16 @@ function Hero() {
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </a>
-            </div>
-          </div>
-          <div className="flex justify-center lg:justify-evenly">
+            </motion.div>
+          </motion.div>
+
+          {/* Right Side: Image with Scale Animation */}
+          <motion.div
+            className="flex justify-center lg:justify-evenly"
+            variants={imageVariants}
+            initial="hidden"
+            animate="visible"
+          >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-dark to-red rounded-full blur-2xl opacity-0"></div>
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full border-1 border-red overflow-hidden bg-red-hover flex items-center justify-center">
@@ -134,7 +182,7 @@ function Hero() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -100,7 +100,7 @@ function Header() {
               initial="closed"
               animate="open"
               exit="closed"
-              className="md:hidden mt-4 pt-4 border-t border-border-light flex flex-col gap-6 origin-top"
+              className="md:hidden mt-4 pt-4 border-t border-border-light flex flex-col gap-6 origin-top bg-light/80 backdrop-blur-md rounded-b-2xl pb-6"
             >
               {navLinks.map((link) => (
                 <motion.li
