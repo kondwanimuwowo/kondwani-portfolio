@@ -121,7 +121,7 @@ function About() {
                   exit="exit"
                   className="space-y-6 overflow-hidden"
                 >
-                  <div className="space-y-6 pt-4 text-dark">
+                  <div className="space-y-6 pt-4 text-gray">
                     <motion.p variants={itemVariants}>
                       I’ve always loved serving people, but my time in ministry leadership shaped how I think, communicate, and work with others. That season taught me depth, discipline, and compassion. I still carry that same heart today—both in my development journey and in my humanitarian work.
                     </motion.p>

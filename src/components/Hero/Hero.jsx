@@ -8,8 +8,8 @@ function Hero() {
       opacity: 1,
       transition: {
         duration: 0.6,
-        staggerChildren: 0.2, // Stagger each child element
-        delayChildren: 0.3, // Slight delay before starting
+        staggerChildren: 0.2,
+        delayChildren: 0.3,
       },
     },
   };
@@ -96,14 +96,14 @@ function Hero() {
             <motion.div variants={childVariants} className="flex flex-wrap gap-4 pt-4">
               <a
                 href="#projects"
-                className="px-8 py-3 bg-red hover:bg-red-hover text-white font-medium rounded-full transition-all duration-300"
+                className="px-6 md:px-8 py-3 bg-red hover:bg-red-hover text-white font-normal md:font-medium rounded-full transition-all duration-300"
               >
                 View My Work
               </a>
               
               <a
                 href="#contact"
-                className="px-8 py-3 bg-red hover:bg-red-hover text-white font-medium rounded-full transition-all duration-300"
+                className="px-6 md:px-8 py-3 bg-red hover:bg-red-hover text-white font-normal md:font-medium rounded-full transition-all duration-300"
               >
                 Get In Touch
               </a>
@@ -111,7 +111,7 @@ function Hero() {
               <a
                 href="/kondwani-resume.pdf"
                 download="Kondwani_Muwowo_Resume.pdf"
-                className="px-8 py-3 bg-dark hover:bg-dark-secondary text-white font-medium rounded-full transition-all duration-300 flex items-center gap-2"
+                className="px-6 md:px-8 py-3 bg-dark hover:bg-dark-secondary text-white font-normal md:font-medium rounded-full transition-all duration-300 flex items-center gap-2"
               >
                 <svg
                   className="w-5 h-5"
