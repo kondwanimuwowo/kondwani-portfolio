@@ -10,6 +10,14 @@ function Skills() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+  // Map skill category keys to icons
+  const categoryIconMap = {
+    frontend: VscCode,
+    backend: SiNodedotjs,
+    design: SiFigma,
+    tools: SiGit,
+  };
+
   return (
     <section id="skills" className="section-padding bg-light-secondary" ref={ref}>
       <div className="container-custom">
@@ -63,8 +71,10 @@ function Skills() {
             >
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 bg-red/10 rounded-lg flex items-center justify-center">
-                  {/* You can add category icons here later */}
-                  <div className="w-6 h-6 bg-red/20 rounded" />
+                  {(() => {
+                    const Icon = categoryIconMap[category];
+                    return Icon ? <Icon className="w-6 h-6 text-red" aria-hidden="true" title={category} /> : <div className="w-6 h-6 bg-red/20 rounded" />;
+                  })()}
                 </div>
                 <h3 className="text-lg font-bold text-dark capitalize">{category}</h3>
               </div>

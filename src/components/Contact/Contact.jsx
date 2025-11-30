@@ -57,14 +57,14 @@ function Contact() {
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="bg-light border-2 border-border-light rounded-xl p-10 mb-12 max-w-2xl mx-auto"
+            className="bg-light border-2 border-border-light rounded-xl p-4 md:p-8 mb-12 max-w-2xl mx-auto"
           >
-            <p className="text-gray mb-6">Currently Open To:</p>
+            <p className="text-gray mb-8">Currently Open To:</p>
             <motion.div
               variants={containerVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
-              className="flex flex-wrap gap-3 justify-center"
+              className="flex flex-wrap gap-2 md:gap-3 justify-center"
             >
               <motion.span variants={itemVariants} className="text-sm bg-red/10 text-gray px-4 py-2 rounded-full">
                 Freelance Projects
@@ -95,7 +95,7 @@ function Contact() {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               href="mailto:kondwanimuwowo@gmail.com"
-              className="inline-flex items-center gap-3 px-8 py-3 bg-red hover:bg-red-hover text-white font-semibold rounded-full transition-all duration-300 text-lg shadow-sm shadow-red/20"
+              className="inline-flex items-center gap-3 px-6 md:px-8 py-3 bg-red hover:bg-red-hover text-white font-semibold rounded-full transition-all duration-300 text-sm shadow-sm md:text-lg shadow-red/20"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -108,7 +108,7 @@ function Contact() {
               whileHover={{ scale: 1.05 }}
               href="/kondwani-resume.pdf"
               download="Kondwani_Muwowo_Resume.pdf"
-              className="inline-flex items-center gap-3 px-8 py-3 bg-dark border-1 border-dark hover:bg-dark-secondary text-white font-semibold rounded-full transition-all duration-300 text-lg"
+              className="inline-flex items-center gap-3 px-8 py-3 bg-dark border-1 border-dark hover:bg-dark-secondary text-white font-semibold rounded-full transition-all duration-300 text-sm md:text-lg"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
