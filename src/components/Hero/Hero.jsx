@@ -87,7 +87,7 @@ function Hero() {
             </motion.h1>
             <motion.h2 variants={childVariants} className="text-2xl md:text-3xl font-semibold text-dark leading-normal">
               I'm a <span className="text-dark">Front-End Developer</span>, UI
-              Designer and fighter against human trafficking.
+              Designer and fighter against human trafficking and child exploitation.
             </motion.h2>
 
             <motion.p variants={childVariants} className="text-gray text-lg md:text-xl leading-relaxed max-w-2xl">
